@@ -16,3 +16,5 @@ makes it the color green. I chose to emphasize these letters to pay tribute to t
 HTML behind the web page. I wanted to help reveal the underlying structure of a 
 webpage without requiring the user to look inside. This project is a starting point
 for revealing the structural nature of the web. 
+
+- Still in development, has some bugs
