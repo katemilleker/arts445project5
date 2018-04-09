@@ -1,7 +1,7 @@
 {
-    "name": "Citation Eraser",
-    "version": "1.0.0",
-    "description": "Removes the sources from a New York Times article.",
+    "name": "Hypertext Magnifies Language",
+    "version": "1.0.2",
+    "description": "Highlights the H, T, M, and Ls on a webpage.",
     "homepage_url": "http://arts445.courses.bengrosser.com/",
     "manifest_version": 2,
     "browser_action": {
@@ -24,13 +24,13 @@
     },
     "content_scripts": [
         {
-            "matches": [ "*://*.nytimes.com/*" ],
+            "matches": [ "*://*/*" ],
             "all_frames": true,
-            "exclude_globs": [ "*://*.nytimes.com/ai.php*", "*://*.nytimes.com/ajax/*", "*://*.nytimes.com/dialog/*", "*://*.nytimes.com/connect/*" ],
-            "exclude_matches": [ "*://*.nytimes.com/ai.php*", "*://*.nytimes.com/ajax/*", "*://*.nytimes.com/dialog/*", "*://*.nytimes.com/connect/*" ],
+            "exclude_globs": [ "*://*/somewhere/*" ],
+            "exclude_matches": [  "*://*/somewhere/*" ],
 		    "run_at": "document_start",
-			"css": ["eraser.css"],
-            "js": ["jquery.min.js","ready.js","eraser.js"]
+			"css": ["hypertext.css"],
+            "js": ["jquery.min.js","ready.js","hypertext.js"]
         }
     ]
 }

@@ -3,3 +3,6 @@
 /* loaded by 'css' section of manifest.json */
 
 /* put any site-wide CSS changes you want to make here! */
+.arts-extension {
+    color: green;
+}
